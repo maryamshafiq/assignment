@@ -104,6 +104,13 @@ var x = "PIZZA \nPIZZ \nPIZ \nPI \nP";
 // var store = "on XYZ Clothing Store";
 // document.write(vname+product+store);
 
+//              OR
+
+// var visitorname = "John Doe";
+// var product = "T-Shirt(s)";
+// var quantity = 15;
+// document.write(visitorname + " " + "ordered" + " " + quantity + " " + product + " " + "on xyz clothing store");
+
 // Chapter # 4
 
 // Answer # 1
@@ -161,23 +168,24 @@ var x = "PIZZA \nPIZZ \nPIZ \nPI \nP";
 
 // Answer # 3
 
-var num;
-document.write("Value after variable declaration is undefined." +"<br>"+"<br>");
-var num = 5;
-document.write("Initial Value: 5"+"<br>");
-var newNum = num++;
-document.write(newNum+"<br>");
-// (first print than add that's why output is 5)
-document.write("Value after increment is: 6"+"<br>");
-var newNum = num++ +7;
-document.write(newNum+"<br>");
-document.write("Value after addition is: 13"+"<br>");
-var no = newNum--;
-document.write(no+"<br>");
-// (first print than substract that's why output is 13)
-document.write("Value after decrement is: 12"+"<br>");
-var value = no
-document.write(value+"<br>");
+// var a;
+// document.write("Value after variable declaration is undefined." +"<br>");
+// var a = 5;
+// document.write(a+"<br>");
+// document.write("Initial Value: 5"+"<br>");
+// var a = ++a;
+// document.write(a+"<br>");
+// document.write("Value after increment is: 6"+"<br>");
+// var a = a+7;
+// document.write(a+"<br>");
+// document.write("Value after addition is: 13"+"<br>");
+// var a = --a;
+// document.write(a+"<br>");
+// document.write("Value after decrement is: 12"+"<br>");
+// var a = a%3;
+// document.write(a+"<br>");
+// document.write("The remainder is: 0"+"<br>");
+
 
 
 
