@@ -1,3 +1,320 @@
+
+// Chapter 31-34
+
+// Task #1
+// var currentDateAndTime = new Date();
+// document.write(currentDateAndTime);
+
+// Task 2:Current month
+// var d = new Date();
+// var words = ['January','February','March','April','May',"June",'July','August','September','October','November','December'];
+// var monthinwords = words[d.getMonth()];
+// alert("Current Month "+ monthinwords);
+
+// Task 3: alert day
+// var date = new Date();
+// var days = ['Sun','Mon','Tue',"Wed",'Thur','Fri','Sat'];
+// var day = days[date.getDay()];
+// alert(day);
+
+// Task 4: 
+// var date = new Date;
+// var days = ['Sun','Mon','Tue',"Wed",'Thur','Fri','Sat']
+// var day = days[date.getDay()]
+// if (day == "Sat" | "Sun"){
+//     alert("It's  Fun day")
+// }
+// else{
+//     alert("It's not Fun day")
+// }
+
+// Task 5
+// var day = new Date();
+// var daysOfMonth = day.getDay()
+// if (daysOfMonth< 16){
+//     alert("First 15  days of the month");
+// }
+
+// else{
+//     alert("Last days of the month");
+// }
+
+// Task 6:
+// var D = new Date();
+// var milli = D.getTime() ;
+// var min = D.getTime()/(1000 * 60);
+// document.write("Current Date: "+D +"<br>")
+// document.write("Ellapsed milliseconds since January 1, 1970 : "+milli +"<br>")
+// document.write("Ellapsed minutes since January 1, 1970 : "+min +"<br>")
+
+
+// Task 7
+// var d = new Date();
+// var Hours = d.getHours()
+
+// if(Hours < 12){
+//     alert("It's AM");
+// }
+
+// else{
+//     alert(" It's PM");
+// }
+
+// Task 8:
+// var laterDate = new Date("Dec 31,2022")
+// document.write("LaterDate:" + " " + laterDate)
+
+// Task 9
+// var todayDate = new Date()
+// var RDate = new Date("June 18,2015")
+// var miliseconds = todayDate.getTime()
+// var miliseconds2 = RDate.getTime()
+// var difference = miliseconds-miliseconds2
+// var daysTillRamadan =Math.floor(difference/(1000*60*60*24)) 
+// alert("Days passed till 2015 ramadan are" +" " + daysTillRamadan );
+
+
+// Task 10
+// var refDate = new Date("December 05, 2015 22:50:16")
+// var prevDate = new Date("January 01, 2015")
+// var refTime = refDate.getTime()
+// var prevTime = prevDate.getTime()
+// var diffInmili = refDate-prevDate
+// var second = Math.ceil(diffInmili/(1000*60))
+// document.write("The Seconds passed since beginning of 2015 are" + " " + second)
+
+// Task 11
+// var currentDate = new Date();
+// document.write("Current date: " + currentDate +"<br>")
+// var hourAgo=new Date()
+// var hours = hourAgo.getHours()
+// hourAgo.setHours(hours-1)
+// document.write("1 hour ago, it was" + " " +hourAgo)
+
+
+// Task 12
+// var currentDate = new Date();
+// document.write("Current date: " + currentDate);
+
+// currentDate.setFullYear(currentDate.getFullYear() -100);
+
+// document.write("<br>100 years back, it was " + currentDate);
+
+// Task 13
+// var age = +prompt("Enter age:");
+// var today = new Date();
+// var currentYear = today.getFullYear();
+// var yearDiff =  currentYear- age;
+// document.write("Your age is " + age);
+// document.write("<br>Your birth year is " + yearDiff);
+
+// Task 14
+// var customerName = prompt("Enter Customer Name","Enter customer name here");
+// var currentMonth = prompt("Enter Current Month", "For Example: January");
+// var numberOfUnits = +prompt("Enter Number of Units", "Enter number of units here")
+
+// var chargesPerUnit = 50;
+// var latePaymentSurcharge = 350;
+// var netAmountPayableWdd = numberOfUnits * chargesPerUnit;
+// var grossAmountPayable = netAmountPayableWdd + latePaymentSurcharge;
+
+// document.write("<h1>K-Electric Bill</h1>");
+// document.write("<br>Customer Name: " + "<b>" + customerName + "</b>");
+// document.write("<br>Month: " + "<b>" + currentMonth + "</b>");
+// document.write("<br>Number of units: " + "<b>" + numberOfUnits + "</b>" );
+// document.write("<br><br><br>Charges per unit: " + "<b>" + chargesPerUnit.toFixed(2) + "</b>");
+// document.write("<br>Net Amount Payable (within Due Date): " + "<b>" + netAmountPayableWdd.toFixed(2) + "</b>");
+// document.write("<br>Late Payment Surcharge: " + "<b>" + latePaymentSurcharge.toFixed(2) + "</b>");
+// document.write("<br>Gross Amount Payable (after Due Date) " + "<b>" + grossAmountPayable.toFixed(2) + "</b>");
+
+
+// Chapter # 35-38-----------------------------------------------
+
+
+// Task # 1
+// function dateTime () {
+//     var date = new Date();
+//     document.write(date);
+// }
+// dateTime();
+
+// Task # 2
+
+// function fullName()
+// {
+//     var firstName = prompt("Enter first name");
+//     var lastName = prompt("Enter last name");
+//     var fullName = firstName + " " + lastName;
+//     alert("Welcome" +" " + fullName);
+// }
+
+// fullName();
+
+// Task # 3
+
+// var num1 = +prompt("Enter first number");
+// var num2 = +prompt("Enter second number");
+
+// function addition(num1,num2)
+// {
+//     return num1 + num2 ;
+// }
+
+// var sum = addition(num1,num2);
+// document.write("Sum of " +num1+ " + " +num2 + " = " + sum);
+
+// Task # 4
+
+// var firstNumber = +prompt("Enter First Number");
+// var secondNumber = +prompt("Enter Second Number");
+// var operator= prompt("Enter Operator like +,-");
+// function calculator (num1,num2,operator)
+// {
+//     if (operator === "+")
+//     {
+//         return num1 + num2;
+//     }
+
+//     else if (operator === "-")
+//     {
+//         return num1 - num2;
+//     }
+//     else if (operator === "*")
+//     {
+//         return num1 * num2;
+//     }
+//     else if (operator === "/")
+//     {
+//         return num1 / num2;
+//     }
+//     else if (operator === "%")
+//     {
+//         return num1 % num2;
+//     }
+// }
+// var result = calculator(firstNumber,secondNumber,operator);
+// document.write("Result: " + result);
+
+// Task # 5
+
+// var num = +prompt("Enter a number");
+// function square(num)
+// {
+//     return num * num;
+// }
+// var result = square(num);
+
+// document.write("Square of " +num+ " is " + result);
+
+// Task 6
+
+// function fact(n) {
+//         if (n === 0 || n === 1) {
+//             return 1;
+//         }
+//         else if (n < 0) {
+//             return -1;
+//         }
+//         else  {
+//             return n * fact(n - 1);
+//         }
+//     }
+//     var n = +prompt("Enter Number: ");
+//     var f = fact(n);
+//     if (f === -1) {
+//         document.write("Negative Number Factorials are not possible<br>");
+//     }
+//     else {
+//         document.write("Factorial of " + n + " is " + f + "<br>");
+//     }
+
+// Task # 7
+
+// var startNumber = +prompt("Enter start number");
+// var endNumber = +prompt("Enter end number");
+// function counting(startNumber,endNumber)
+// {
+//     for (var i=startNumber; i<=endNumber;i++)
+//     {
+//         document.write(i + "<br>");
+//     }    
+// }
+// counting(startNumber,endNumber);
+ 
+// Task #8
+// function calculateSquare(num) {
+//         return num * num;
+//     }
+//     function calculateHypotenuse(base, perpendicular) {
+//         return Math.sqrt(calculateSquare(base) + calculateSquare(perpendicular)).toFixed(2);
+//     }
+//     var base = +prompt("Enter Base: ");
+//     var perpendicular = +prompt("Enter Perpendicular: ");
+//     document.write("Hypotenuse: " + base + " and " + perpendicular + " is " + calculateHypotenuse(base, perpendicular) + "<br>");
+
+
+// Task # 9
+
+// function area(width,height)
+// {
+//     return width * height;
+// }
+// var result = area(4,5);
+// document.write("Area of rectangle is " +result);
+
+// Task # 10
+// function palindrome(str) {
+//         var revStr = str.split("").reverse().join("");
+//         if (str === revStr) {
+//             document.write("Given string \"" + str + "\" is a palindrome<br>");
+//         }
+//         else {
+//             document.write("Given string \"" + str + "\" is not a palindrome<br>");
+//         }
+//     }
+//     var str = prompt("Enter a phrase: ");
+//     palindrome(str);
+
+// Task # 11
+
+// var str = prompt("Please type a string", "Type String here");
+// function titleCase(str)
+// {
+//   var splitString = str.split(' ');
+//   var newArray = [];
+    
+//   for(var i = 0; i < splitString.length; i++){
+//     newArray.push(splitString[i].charAt(0).toUpperCase()+splitString[i].slice(1));
+//   }
+//   return newArray.join(' ');
+// }
+// var strInTitleCase = titleCase(str);
+// alert(strInTitleCase);
+
+// Task # 12
+
+// var str = prompt("Please type a string", "Type String here");
+// function longestWord(str) 
+// {
+//     var words = str.split(' ');
+//     var longestWord = '';
+
+//     for (var i = 0; i < words.length; i++) {
+//       if (words[i].length > longestWord.length) {
+//         longestWord = words[i];
+//       }
+//     }
+//     return longestWord;
+// }
+// alert("Longest word Within String is "+longestWord(str));
+
+
+
+
+
+
+
+
 // Chapter # 21 -25
 
 // Task #1
